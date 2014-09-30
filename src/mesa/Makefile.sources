@@ -3,8 +3,8 @@
 # This file is among different build systems. SRCDIR must be defined with
 # a trailing slash because the Android build system leaves it undefined.
 
-SRCDIR = $(top_srcdir)/src/mesa/
-BUILDDIR = $(top_builddir)/src/mesa/
+SRCDIR = $(top_srcdir)
+BUILDDIR = $(top_builddir)
 
 # this is part of MAIN_FILES
 MAIN_ES_FILES = \

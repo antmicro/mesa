@@ -50,8 +50,8 @@ LOCAL_SHARED_LIBRARIES := \
 	libdl \
 	libhardware \
 	liblog \
-	libcutils \
-	libgralloc_drm \
+	libcutils
+#	libgralloc_drm \
 
 ifeq ($(shell echo "$(MESA_ANDROID_VERSION) >= 4.2" | bc),1)
 LOCAL_SHARED_LIBRARIES += libsync

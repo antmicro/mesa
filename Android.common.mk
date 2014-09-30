@@ -31,7 +31,8 @@ endif
 endif
 
 LOCAL_C_INCLUDES += \
-	$(MESA_TOP)/include
+	$(MESA_TOP)/include \
+	$(MESA_TOP)/src
 
 MESA_VERSION=$(shell cat $(MESA_TOP)/VERSION)
 # define ANDROID_VERSION (e.g., 4.0.x => 0x0400)

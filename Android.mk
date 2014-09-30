@@ -40,8 +40,8 @@ MESA_PYTHON2 := python
 
 DRM_GRALLOC_TOP := hardware/drm_gralloc
 
-classic_drivers := i915 i965
-gallium_drivers := swrast freedreno i915g ilo nouveau r300g r600g radeonsi vmwgfx
+classic_drivers := #i915 i965
+gallium_drivers := swrast etna #freedreno i915g ilo nouveau r300g r600g radeonsi vmwgfx
 
 MESA_GPU_DRIVERS := $(strip $(BOARD_GPU_DRIVERS))
 

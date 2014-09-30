@@ -40,7 +40,7 @@ LOCAL_C_INCLUDES := \
 	$(MESA_TOP)/src/mapi
 
 LOCAL_SRC_FILES := \
-	main/hash_table.c \
+	../util/hash_table.c \
 	main/imports.c \
 	program/prog_hash_table.c \
 	program/symbol_table.c

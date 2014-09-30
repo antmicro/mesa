@@ -28,6 +28,13 @@ LOCAL_PATH := $(call my-dir)
 include $(LOCAL_PATH)/Makefile.sources
 
 GLSL_SRCDIR = .
+
+# XXX These files (format_srgb.c and format_info.c) should be generated during
+# the build process. Following lines are added as a tem workaround for AOSP.
+DROID_MESA_SRCDIR = external/mesa/src
+$(shell python $(DROID_MESA_SRCDIR)/util/format_srgb.py      []                                         > $(DROID_MESA_SRCDIR)/util/format_srgb.c)
+$(shell python $(DROID_MESA_SRCDIR)/mesa/main/format_info.py $(DROID_MESA_SRCDIR)/mesa/main/formats.csv > $(DROID_MESA_SRCDIR)/mesa/main/format_info.c)
+
 # ---------------------------------------
 # Build libmesa_glsl
 # ---------------------------------------
